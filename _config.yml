@@ -1,20 +1,21 @@
 title:            Tom Bevers
-description:      Describe your website here.
-markdown: redcarpet
-pygments: true
-permalink: pretty
+description:      Personal blog of Tom Bevers
+markdown:         redcarpet
+pygments:         true
+permalink:        /:year/:month/:day/:title
 # Owner/author information
 owner:
-  name:           Bevers
+  name:           Tom Bevers
   firstname:      Tom
-  # Social networking links used in footer. Update and remove as you like.
+  lastname:       Bevers
+  # Social networking links used in footer.
   twitter:        tombevers
   facebook:       tom.bevers
   github:         tombevers
-  stackexchange:  29819/tom
+  stackexchange:  http://stackexchange.com/users/29819/tom
   linkedin:       tombevers
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    118427252518503055068
+  google_plus:    https://plus.google.com/u/1/118427252518503055068
   
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
