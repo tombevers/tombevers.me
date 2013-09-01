@@ -1,0 +1,66 @@
+// Navbar variables
+// --------------------------------------------------
+@navbar-default-bg: #fff;
+@navbar-default-color: #333;
+@navbar-border-radius: 0;
+@navbar-border-color: #fff;
+@navbar-default-border: #fff;
+@navbar-padding-horizontal: 0;
+@navbar-default-link-hover-color: @link-hover-color;
+@navbar-default-brand-hover-color: @link-hover-color;
+
+// Typography
+// --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,200,100);
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-size-base:          16px;
+@font-family-brand:       'Roboto', sans-serif;
+
+// Colors
+// --------------------------------------------------
+
+@text-color      		: #222;
+@base-color 	 		  : #343434;
+
+body {
+  padding: 30px;
+}
+
+::selection {
+  color: @base-color;
+  background: #dadada;
+}
+
+.navbar-default {
+  .navbar-brand {
+    font-family: @font-family-brand;
+    font-weight: 100;
+    font-size: 35px;
+    font-style: small-caps;
+    color: @text-color;
+    text-transform: uppercase;
+    strong {
+      font-weight: 400;
+    }
+  }
+  .navbar-nav {
+    > li > a {
+      color: @text-color;
+      &hover {
+        color: @link-hover-color;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  > li > a {
+    font-family: @font-family-brand;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @text-color;
+  }
+}
