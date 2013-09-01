@@ -1,4 +1,33 @@
-name: Clearfix.be
+title:            Tom Bevers
+description:      Describe your website here.
 markdown: redcarpet
 pygments: true
 permalink: pretty
+# Owner/author information
+owner:
+  name:           Bevers
+  firstname:      Tom
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        tombevers
+  facebook:       tom.bevers
+  github:         tombevers
+  stackexchange:  29819/tom
+  linkedin:       tombevers
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    118427252518503055068
+  
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Brussels
+future:      true
