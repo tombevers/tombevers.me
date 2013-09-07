@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2013-08-29 23:25:48
-categories: jekyll update
+date:   2013-09-29 23:25:48
+tags: jekyll update
 comments: true
 ---
 

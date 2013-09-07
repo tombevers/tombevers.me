@@ -6,9 +6,8 @@ layout: default
   <i class="icon-calendar"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
   <i class="icon-tags"></i> {% for tag in page.tags %} {{ tag }} {% if forloop.last != true %} {% endif %} {% endfor %}
 </p>
-
-<div class="post">
+<article class="entry">
 {{ content }}
-</div>
+</article>
 {% if site.disqus and page.comments %}<div id="disqus_thread"></div>{% endif %}
 {% include comments.html %}
