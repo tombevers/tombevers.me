@@ -30,6 +30,12 @@
 @text-color: #222;
 @base-color: #343434;
 
+
+// Other
+// --------------------------------------------------
+@default-padding: 48px;
+@small-padding: @default-padding/2;
+
 body {
   padding: 0;
 }
@@ -44,11 +50,17 @@ body {
 }
 
 .header-wrapper {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: @default-padding;
+  margin-bottom: @default-padding;
 }
 
 .navbar-default {
+  .navbar-collapse {
+    border: none;
+    .nav > li > a {
+      padding-left: 0;
+    }
+  }
   .navbar-brand {
     font-family: @font-family-brand;
     font-weight: 100;
@@ -84,7 +96,7 @@ body {
 }
 
 .post-list {
-  padding: 0 0 20px;
+  padding: 0;
   margin: 0 auto;
   list-style-type: none;
   li {
@@ -99,6 +111,7 @@ body {
     display: inline;
     text-transform: uppercase;
     font-size: @font-size-base;
+    .hidden-xs
   }
   a > span {
     float: right;
@@ -106,13 +119,13 @@ body {
 }
 
 .footer-wrapper {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: @default-padding;
+  margin-bottom: @default-padding;
   text-align: center;
 }
 
 .social-icons {
-  margin-top: 1em;
+  margin-top: @small-padding;
   a {
     color: lighten(@text-color, 0%);
     text-decoration: none;

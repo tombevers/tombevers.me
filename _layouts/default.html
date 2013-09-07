@@ -4,10 +4,12 @@
   <body>
     {% include header.html %}
     {% if page.home %}
-    <section class="container jumbotron">
-      <h1>Hello!</h1>
-      <p>I am Tom Bevers a passionate webdeveloper based in Belgium and currently working for <a href="http://www.printconcept.com">PrintConcept.com</a>. I love building websites and web applications.</p>
-    </section>
+    <div class="container">
+      <section class="jumbotron">
+        <h1>Hello!</h1>
+        <p>I am Tom Bevers a passionate webdeveloper based in Belgium and currently working for <a href="http://www.printconcept.com">PrintConcept.com</a>. I love building websites and web applications.</p>
+      </section>
+    </div>
     {% endif %}
     <section class="container content">
       {{ content }}
