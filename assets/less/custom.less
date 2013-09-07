@@ -1,3 +1,7 @@
+// Import Font awesome icons
+@import "font-awesome/font-awesome.less";
+@FontAwesomePath:    "../../assets/fonts";
+
 // Navbar variables
 // --------------------------------------------------
 @navbar-default-bg: #fff;
@@ -12,20 +16,22 @@
 // Typography
 // --------------------------------------------------
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,200,100);
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+@font-family-sans-serif:  'Source Sans Pro', Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-brand:       'Roboto', Helvetica, Arial, sans-serif;
+@headings-font-family:    @font-family-brand;
 @font-size-base:          16px;
-@font-family-brand:       'Roboto', sans-serif;
 
 // Colors
 // --------------------------------------------------
 
-@text-color      		: #222;
-@base-color 	 		  : #343434;
+@text-color: #222;
+@base-color: #343434;
 
 body {
-  padding: 30px;
+  padding: 0;
 }
 
 ::selection {
@@ -33,11 +39,20 @@ body {
   background: #dadada;
 }
 
+.container {
+  max-width: @screen-sm;
+}
+
+.header-wrapper {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .navbar-default {
   .navbar-brand {
     font-family: @font-family-brand;
     font-weight: 100;
-    font-size: 35px;
+    font-size: floor(@font-size-base * 2.60);
     font-style: small-caps;
     color: @text-color;
     text-transform: uppercase;
@@ -59,8 +74,51 @@ body {
   > li > a {
     font-family: @font-family-brand;
     font-weight: 300;
-    font-size: 16px;
+    font-size: floor(@font-size-base * 1.25);
     text-transform: uppercase;
-    color: @text-color;
+    color: @text-color;  
+  }
+  > li:last-child > a {
+    padding-right: 0;
+  }
+}
+
+.post-list {
+  padding: 0 0 20px;
+  margin: 0 auto;
+  list-style-type: none;
+  li {
+    padding: 4px 0;  
+    a {
+      font-size: 24px;
+    }
+  }
+  .entry-date {
+    color: lighten(@text-color, 35%);
+    padding-top: 6px;
+    display: inline;
+    text-transform: uppercase;
+    font-size: @font-size-base;
+  }
+  a > span {
+    float: right;
+  }
+}
+
+.footer-wrapper {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 1em;
+  a {
+    color: lighten(@text-color, 0%);
+    text-decoration: none;
+    padding-left: 20px;
+    &:hover {
+      color: lighten(@text-color, 15%);
+    }
   }
 }
