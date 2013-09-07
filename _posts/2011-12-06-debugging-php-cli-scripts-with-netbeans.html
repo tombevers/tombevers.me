@@ -1,0 +1,22 @@
+---
+layout: post
+title: Debugging PHP CLI scripts with Netbeans
+description: How to debug PHP CLI scripts with Netbeans and Xdebug
+tags:
+- CLI
+- Netbeans
+- PHP
+- Xdebug
+comments: true
+---
+Today I share a little trick to debug PHP command line scripts with <a title="Netbeans" href="http://netbeans.org/">Netbeans</a>.
+I expect for this trick to work that you have already set up <a href="http://xdebug.org/">Xdebug</a> properly. If not, you need to follow these <a title="Xdebug setup instructions" href="http://wiki.netbeans.org/HowToConfigureXDebug">instructions</a>.
+
+First we need to get the debugging <strong>Session ID</strong> of Netbeans, by default this will be <strong>netbeans-xdebug</strong>.
+
+<img class="size-full wp-image-97 alignnone" title="xdebug-config" src="http://clearfix.be/wp-content/uploads/2011/12/xdebug-config.png" alt="xdebug-config" width="400" height="343" />
+
+Then it's just simply a case of starting debugging in netbeans and executing the following in the command line (This will set an environment variable with the name of the debug session):
+<pre>export XDEBUG_CONFIG="idekey=netbeans-xdebug"</pre>
+And last but not least execute your script from the command line
+<pre>php myscript.php</pre>

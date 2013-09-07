@@ -1,0 +1,16 @@
+---
+layout: post
+title: How to truncate a foreign key constrained table
+description: 
+tags: []
+status: draft
+comments: true
+---
+Today I was strugeling
+
+SET FOREIGN_KEY_CHECKS=0;
+TRUNCATE table1;
+TRUNCATE table2;
+SET FOREIGN_KEY_CHECKS=1;
+
+http://stackoverflow.com/a/8074510/80840
