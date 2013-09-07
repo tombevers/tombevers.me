@@ -20,6 +20,9 @@ owner:
 google_analytics:   UA-2215924-9
 google_verify:      
 
+# Diqus account for comments
+disqus: tombevers
+
 # Links to include in top navigation
 # For external links add external: true
 links:

@@ -7,3 +7,5 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
+{% if site.disqus and page.comments %}<div id="disqus_thread"></div>{% endif %}
+{% include comments.html %}
