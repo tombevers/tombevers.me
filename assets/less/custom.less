@@ -2,6 +2,9 @@
 @import "font-awesome/font-awesome.less";
 @FontAwesomePath:    "../../assets/fonts";
 
+// Import animate.less
+@import "animate.less";
+
 // Navbar variables
 // --------------------------------------------------
 @navbar-default-bg: #fff;
@@ -92,6 +95,31 @@ body {
   }
   > li:last-child > a {
     padding-right: 0;
+  }
+}
+
+.jumbotron {
+  .animated;
+  .fadeIn;
+  h1 {
+    .animated;
+    .bounce;
+  }
+  p {
+    .animated;
+    .fadeIn;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-delay: 1s;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 1;
+    -op-animation-delay: 1s;
+    -op-animation-duration: 2s;
+    -op-animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
   }
 }
 
