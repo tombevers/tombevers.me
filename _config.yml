@@ -1,5 +1,6 @@
 title:            Tom Bevers
 description:      Personal blog of Tom Bevers
+url:              http://tombevers.me
 markdown:         redcarpet
 pygments:         true
 permalink:        /:year/:month/:day/:title
@@ -8,6 +9,7 @@ owner:
   name:           Tom Bevers
   firstname:      Tom
   lastname:       Bevers
+  email:          hello@tombevers.me
   # Social networking links used in footer.
   twitter:        tombevers
   github:         tombevers
