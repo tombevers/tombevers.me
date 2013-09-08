@@ -1,10 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} !^clearfix\.be$ [NC]
-RewriteRule ^(.*)$ http://tombevers.me [R=301,L]
 
-RedirectMatch 301 ^/archive/.*$ http://tombevers.me/
-RedirectMatch 301 ^/blog/.*$ http://tombevers.me/
-RedirectMatch 301 ^/category/.*$ http://tombevers.me/
-RedirectMatch 301 ^/author/.*$ http://tombevers.me/about/
+RedirectMatch 301 ^/archive.*$ http://tombevers.me/
+RedirectMatch 301 ^/blog.*$ http://tombevers.me/
+RedirectMatch 301 ^/category.*$ http://tombevers.me/
+RedirectMatch 301 ^/author.*$ http://tombevers.me/about/
