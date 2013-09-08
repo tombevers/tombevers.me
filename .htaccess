@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine On
+RewriteCond %{HTTP_HOST} !^tombevers\.me$ [NC]
+RewriteRule ^(.*)$ http://tombevers.me/$1 [R=301,L]
 
 RedirectMatch 301 ^/archive.*$ http://tombevers.me/
 RedirectMatch 301 ^/blog.*$ http://tombevers.me/
