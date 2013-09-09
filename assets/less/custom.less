@@ -150,6 +150,22 @@ body {
   margin-bottom: @small-padding;
 }
 
+.entry-header {
+  h2 > a {
+    color: @text-color;
+    &:hover {
+     color: lighten(@text-color, 25%);
+     text-decoration: none;
+    }
+  }
+}
+
+.comments {
+  header {
+    margin-bottom: @small-padding;    
+  }
+}
+
 .footer-wrapper {
   margin-top: @default-padding;
   margin-bottom: @default-padding;

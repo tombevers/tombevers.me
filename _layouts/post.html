@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">
-  <i class="icon-calendar"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-  <i class="icon-tags"></i> {% for tag in page.tags %} {{ tag }} {% if forloop.last != true %} {% endif %} {% endfor %}
-</p>
 <article class="entry">
-{{ content }}
+  <header class="entry-header">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <p class="meta">
+      <i class="icon-time"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+      <i class="icon-tags"></i> {% for tag in page.tags %} {{ tag }} {% if forloop.last != true %} {% endif %} {% endfor %}
+    </p>
+  </header>
+  <div class="entry-content">
+    {{ content }}
+  </div>
 </article>
 {% if site.disqus and page.comments %}<div id="disqus_thread"></div>{% endif %}
 {% include comments.html %}
