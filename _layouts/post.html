@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="entry">
   <header class="entry-header">
-    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <h2>{{ page.title }}</h2>
     <p class="meta">
       <i class="icon-time"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
       <i class="icon-tags"></i> {% for tag in page.tags %} {{ tag }} {% if forloop.last != true %} {% endif %} {% endfor %}
