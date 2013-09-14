@@ -6,7 +6,7 @@ tags:
 - Mac OS X Mountain Lion
 - Python
 ---
-Recently I upgraded to Mountain Lion Mac OS X. But when I launched VIM for the first time I got following erros:
+Recently I upgraded to Mountain Lion Mac OS X. But when I launched VIM for the first time I got following errors:
 <pre>Traceback (most recent call last):
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site.py", line 565, in 
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site.py", line 547, in main

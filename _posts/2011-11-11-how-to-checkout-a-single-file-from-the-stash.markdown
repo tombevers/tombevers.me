@@ -11,5 +11,5 @@ Last week I needed a single file that I had stashed before. As git is a very pow
 
 This will checkout your stashed file from stash 0:
 
-<pre name="code">git checkout stash@{0} -- filename</pre>
 
+<pre>git checkout stash@{0} -- filename</pre>

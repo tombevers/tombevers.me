@@ -7,6 +7,7 @@ tags:
 - diff
 ---
 Once I needed to view the differences between the same file in different branches in git. This can be done by using following command:
+
 <pre>
 git difftool somebranch:README otherbranch:README
 </pre>
