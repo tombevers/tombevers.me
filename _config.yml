@@ -1,7 +1,7 @@
 title:            Tom Bevers
 description:      Personal blog of Tom Bevers
 url:              http://tombevers.me
-markdown:         redcarpet
+markdown:         kramdown
 pygments:         true
 permalink:        /:year/:month/:day/:title
 # Owner/author information
