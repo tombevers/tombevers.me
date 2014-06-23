@@ -2,7 +2,7 @@ title:            Tom Bevers
 description:      Personal blog of Tom Bevers
 url:              http://tombevers.me
 markdown:         kramdown
-pygments:         true
+highlighter:         true
 permalink:        /:year/:month/:day/:title
 # Owner/author information
 owner:
